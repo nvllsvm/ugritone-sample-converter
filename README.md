@@ -1,8 +1,12 @@
 # Ugritone Sample Converter
 Convert Ugritone samples to standard audio files.
 
-- `.ugrisample` → `.flac`
-- `.ugridemo` → `.ogg`
+| Original      | Converted |
+|---------------|-----------|
+| `.dahsample`  | `.flac`   |
+| `.ugrisample` | `.flac`   |
+| `.ugriverb`   | `.flac`   |
+| `.ugridemo`   | `.ogg`    |
 
 ## Usage
 Requires Python 3.

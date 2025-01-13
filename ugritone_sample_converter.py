@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 Convert Ugritone samples to standard audio files.
-
-It decodes `.ugrisample` files to `.flac` and `.ugridemo` files to `.ogg`.
 """
 import argparse
 import base64
@@ -305,7 +303,7 @@ def main():
             max_workers=args.max_workers) as executor:
         for path in all_files(args.path):
             match path.suffix.lower():
-                case ".ugrisample":
+                case ".ugrisample" | '.ugriverb' | '.dahsample':
                     key = DECRYPT_SAMPLE_KEY
                     suffix = ".flac"
                 case ".ugridemo":
